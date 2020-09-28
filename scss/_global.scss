@@ -1,0 +1,23 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+a {
+    &:focus {
+        outline: none;
+    }
+}
+
+#wrapper {
+    display: flex;
+    #wrapper-content {
+        background-color: $bg-primary;
+        width: 100%;
+        overflow-x: hidden;
+    }
+}

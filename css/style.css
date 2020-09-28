@@ -1,0 +1,82 @@
+.side-bar {
+  background-color: #172051;
+  list-style: none;
+  min-height: 100vh;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.side-bar .nav-item {
+  height: 50px;
+  margin: 13px 13px 13px 13px;
+}
+.side-bar .nav-item span {
+  margin-left: 5px;
+  align-self: center;
+  color: #fff;
+  font-size: 1rem;
+}
+.side-bar .sidebar-brand-icon {
+  height: 60px;
+  margin: 15px 46px 15px 46px;
+  width: 75%;
+  float: center;
+}
+
+.navbar {
+  background-color: #fff;
+  height: 75px;
+  display: flex;
+  flex-wrap: row nowrap;
+  justify-content: space-between;
+}
+.navbar .btn-toogle {
+  background-color: #fff;
+  border: none;
+}
+.navbar .navbar-nav {
+  display: flex;
+  flex-wrap: row nowrap;
+  justify-content: space-around;
+}
+.navbar .navbar-nav .topbar-divider {
+  border-left: 2px solid #F5F6FA;
+  height: 74px;
+  margin: 10px;
+}
+.navbar .navbar-nav .nav-item {
+  width: auto;
+  align-self: center;
+  justify-self: center;
+}
+.navbar .navbar-nav .nav-item .nav-item__btn-language {
+  margin: 15px;
+}
+.navbar .navbar-nav .dropdown .image-rounded {
+  border-radius: 50%;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+a:focus {
+  outline: none;
+}
+
+#wrapper {
+  display: flex;
+}
+#wrapper #wrapper-content {
+  background-color: #F5F6FA;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
