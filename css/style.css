@@ -1,82 +1,92 @@
-.side-bar {
-  background-color: #172051;
-  list-style: none;
-  min-height: 100vh;
-  width: 250px;
+@charset "UTF-8";
+* {
+  font-family: "Noto Sans", sans-serif;
   margin: 0;
   padding: 0;
-  text-align: left;
+  box-sizing: border-box;
 }
-.side-bar .nav-item {
-  height: 50px;
-  margin: 13px 13px 13px 13px;
-}
-.side-bar .nav-item span {
-  margin-left: 5px;
-  align-self: center;
-  color: #fff;
-  font-size: 1rem;
+
+.side-bar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  left: 0px;
+  background: #172051;
 }
 .side-bar .sidebar-brand-icon {
-  height: 60px;
-  margin: 15px 46px 15px 46px;
-  width: 75%;
-  float: center;
+  padding: 15px 45px 30px 45px;
 }
-
-.navbar {
-  background-color: #fff;
-  height: 75px;
-  display: flex;
-  flex-wrap: row nowrap;
-  justify-content: space-between;
-}
-.navbar .btn-toogle {
-  background-color: #fff;
-  border: none;
-}
-.navbar .navbar-nav {
-  display: flex;
-  flex-wrap: row nowrap;
-  justify-content: space-around;
-}
-.navbar .navbar-nav .topbar-divider {
-  border-left: 2px solid #F5F6FA;
-  height: 74px;
-  margin: 10px;
-}
-.navbar .navbar-nav .nav-item {
-  width: auto;
-  align-self: center;
-  justify-self: center;
-}
-.navbar .navbar-nav .nav-item .nav-item__btn-language {
-  margin: 15px;
-}
-.navbar .navbar-nav .dropdown .image-rounded {
-  border-radius: 50%;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  height: 100%;
-}
-
-a:focus {
-  outline: none;
-}
-
-#wrapper {
-  display: flex;
-}
-#wrapper #wrapper-content {
-  background-color: #F5F6FA;
+.side-bar .nav-item {
   width: 100%;
-  overflow-x: hidden;
+  min-height: 50px;
+  list-style-type: none;
+  line-height: 50px;
+}
+.side-bar .nav-item a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 15px;
+  display: block;
+  border-left: 3px solid transparent;
+}
+.side-bar .nav-item a span {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.side-bar .nav-item a img {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.side-bar .nav-item ul {
+  position: static;
+  display: none;
+}
+.side-bar .nav-item ul li {
+  line-height: 40px;
+}
+.side-bar .nav-item ul li a {
+  padding-left: 52px;
+}
+.side-bar .nav-item .mess-show.show {
+  display: block;
+}
+.side-bar .nav-item .ỉnteract-show.show1 {
+  display: block;
+}
+.side-bar .nav-item .collapse {
+  position: relative;
+}
+.side-bar .nav-item .collapse .dropdown-fa {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.4s;
+}
+.side-bar .nav-item .first.rotate {
+  transform: translate(50%, -50%) rotate(-180deg);
+}
+.side-bar .nav-item .second.rotate {
+  transform: translate(50%, -50%) rotate(-180deg);
+}
+.side-bar li.active a {
+  color: cyan;
+  background: #141C49;
+  border-left-color: cyan;
+}
+
+.btn {
+  position: absolute;
+  border: none;
+  background: white;
+  left: 20px;
+}
+
+.btn.click {
+  margin-left: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */

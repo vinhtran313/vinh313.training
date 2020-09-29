@@ -1,23 +1,93 @@
-html {
-    position: relative;
-    min-height: 100%;
+*{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
+.side-bar {
+    position: fixed;
+    width: 250px;
     height: 100%;
-}
-
-a {
-    &:focus {
-        outline: none;
+    left: 0px;
+    background: $bg-sidebar;
+    .sidebar-brand-icon{
+      padding: 15px 45px 30px 45px;
     }
-}
-
-#wrapper {
-    display: flex;
-    #wrapper-content {
-        background-color: $bg-primary;
+    .nav-item {
         width: 100%;
-        overflow-x: hidden;
+        min-height: 50px;
+        list-style-type: none;
+        line-height: 50px;
+        a {
+            color: rgba($color: white, $alpha: 0.5);
+            text-decoration: none;
+            font-size: 14px;
+            padding-left: 15px;
+            display: block;
+            border-left: 3px solid transparent;
+            span {
+                padding-left: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+            }
+            img {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+      
+        ul {
+            position: static;
+            display: none;
+            li {
+                line-height: 40px;
+                a {
+                    padding-left: 52px;
+                }
+            }
+        }
+        .mess-show.show{
+            display: block;
+        }
+        .ỉnteract-show.show1{
+            display: block;
+        }
+        
+        .collapse {
+            position: relative;
+            .dropdown-fa {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: transform 0.4s;
+            }
+        }
+        .first.rotate {
+            transform: translate(50%,-50%) rotate(-180deg);
+        }
+        .second.rotate {
+            transform: translate(50%,-50%) rotate(-180deg);
+        }
+    }
+    li.active {
+        a {
+        color: cyan;
+        background: $bg-sidebar-hover;
+        border-left-color: cyan;
+        }
     }
 }
+.btn {
+    position: absolute;
+    border: none;
+    background: white;
+    left: 20px;
+}
+.btn.click {
+    margin-left: 250px;
+}
+
+
